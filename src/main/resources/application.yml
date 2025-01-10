@@ -4,7 +4,8 @@ micronaut:
       enabled: true
       configurations:
         default:
-          allowed-origins: "*"
+          allowed-origins:
+            - "*"
           allowed-methods:
             - GET
             - POST
@@ -12,11 +13,10 @@ micronaut:
             - DELETE
             - OPTIONS
           allowed-headers:
-            - "Content-Type"
-            - "Authorization"
-            - "X-Requested-With"
-            - "Origin"
-            - "Accept"
-            - "Access-Control-Allow-Origin"
+            - Content-Type
+            - Authorization
+            - X-Requested-With
+            - Origin
+            - Accept
           exposed-headers:
-            - "Authorization"
+            - Authorization
